@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('./assets/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Founders';
+    src: url('./assets/Founders_Grotesk/FoundersGrotesk-Semibold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #111;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0.6vh 0;
+    background-color: #E5E7DF;
+}
+
+::selection {
+    background-color: #1E1E1E;
+    color: #E5E7DF;
+  }
+  
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 3.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.6vh;
+    z-index: 100;
+    padding: 0 4vh;
+}
+
+header h4 {
+    margin:  0 0 0  8.5vh;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+header h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+header h4:hover::after {
+    transform: scaleX(1);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.links a { 
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.links a.active::after {
+    transform: scaleX(1);
+    transition: none;
+}
+  
+
+.links a:hover::after {
+    transform: scaleX(1);
+}
+
+.logo {
+    filter: brightness(0) saturate(100%);
+    height: 2.7vh;
+}
+
+.page1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: top;
+    gap: 19.5vw;
+    padding: 21.5vh 0 0 4vh;
+}
+
+.page1 .p1 h3 {
+    width: 20vw;
+    line-height: 3.5vh;
+    letter-spacing: 0.1px;
+}
+
+.p1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5.5vh;
+    align-items: flex-start;
+    height: 27vh;
+    overflow: hidden;
+}
+
+.p1-p2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.2vh;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;  
+}
+
+.p1-p2 svg {
+    height: 2.5vh;
+    width: auto;
+}
+
+.p1-h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 5vh;
+}
+
+.line-wrapper {
+    height: 7vh;
+    overflow: hidden;
+}
+  
+
+.page1 h1 {
+    font-weight: 700;
+    font-size: 6.5vh;
+    letter-spacing: -0.4px;
+}
+
+.marque {
+    flex-shrink: 0;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow : hidden;
+    gap: 3vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    white-space: nowrap;
+    padding-right: 2.5vw;
+}
+
+.marque h1 {
+    display: inline-block;
+    color: #1E1E1E;
+    font-family: 'Founders';
+    font-size: 30vw;
+    height: 100%;
+    letter-spacing: -15px;
+}
+
+.marque img {
+    padding-top: 6vh;
+    height: 45vh;
+}
+
+.page2 {
+    display: flex;
+    height: 53vh;
+    overflow-x: hidden;
+}
+
+.page3 {
+    font-size: 3.4vh;
+    letter-spacing: 0.5px;
+    margin: 17vh 0 0 4vh;
+    padding-bottom: 13.5vh;
+    line-height: 7.5vh;
+    border-bottom: 1px solid #1111111f;
+}
+
+.p3-p1 {
+    padding-bottom: 6vh;
+}   
+
+.page4 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    padding: 6vh 4vh 35vh 4vh;
+}
+
+.p4-1 {
+    height: 100%;
+    width: 50%;
+    font-size: 2.4vh;
+}
+
+.p4-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh    ;
+    height: 100%;
+    width: 50%;
+    font-size: 2vh;
+}
+.p4-1 {
+    text-transform: uppercase;
+}
+
+.p4-p2-h {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.p4-sub {
+    color: #949691;
+    max-width: 65%;
+}
+
+.p5-p1-a { 
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+
+.p5-p1-a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+  
+.p5-p1-a:hover::after {
+    transform: scaleX(1);
+}
+
+.page5 {
+    background-color: #FFFFFF;
+    padding: 4vh 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+}
+
+.p5-p1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.8vh;
+}
+
+.p5-p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 37vh;
+}
+
+.p5-p2 h1{
+    text-transform: uppercase;
+    display: inline-block;
+    color: #1E1E1E;
+    font-family: 'Founders';
+    font-size: 24vw;
+    height: 100%;
+    letter-spacing: -15px;
+}
+
+.p5-ani {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 3vh;
+}
+
+.p5-p2-h1 {
+
+}
+
+.p5-p2-h2 {
+
+}

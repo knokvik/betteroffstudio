@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('./assets/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    src: url('./assets/Founders_Grotesk/Gilroy-Regular.otf');
 }
 
 @font-face {
     font-family: 'Gilroy Bold';
-    src: url('./assets/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    src: url('./assets/Gilroy/Gilroy-SemiBold.t tf');
 }
 
 @font-face {
@@ -18,7 +18,8 @@
     padding: 0;
     box-sizing: border-box;
     color: #111;
-    font-family: 'Gilroy';
+    font-weight: 200;
+    font-family: 'Poppins';
 }
 
 html, body {
